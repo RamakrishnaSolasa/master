@@ -1,0 +1,118 @@
+environment setup 
+------------------------
+
+    1. openjdk 8 
+    2. STS or Eclipse 
+    3. nodejs v14.x 
+    4. mongodb community edition 
+    5. mysql community edition 
+
+
+core java 
+--------------
+    - oops concepts 
+    - collection 
+    - threading, thread pool, executors 
+    - IO 
+    - exception handling 
+    - java8 
+    - JDBC 
+   
+
+
+Spring 
+----------
+    spring versions 
+        - spring 1.x 
+            - 1. Core 
+              2. AOP 
+              3. JDBC/DAO 
+              4. ORM 
+              5. Tx 
+              6. WEb and Web MVC 
+              7. Security 
+
+        - spring 2.x 
+
+        - spring 3.x 
+
+        - spring 4.x 
+
+        - spring 5.x 
+
+    spring modules 
+        - spring Core 
+        - spring REST 
+        - spring boot
+        - spring Data 
+        - Spring Security 
+        - Spring Cloud  
+
+
+        - what is java bean  
+            - simple java classes like POJO 
+            - public default constructor 
+            - all members are private 
+            - public getter / setter methods 
+            - implements serializable interface 
+
+        - what is spring bean
+            - a bean is an object that is instantiated, assembled or managed by a spring IOC container 
+
+        - what is IOC
+            - IOC is a principle in soft engineering which delegates the control of objects to a "container"
+
+            - used for decoupling the execution of a task from its implementation 
+            - makes it easy to switch between diff implementations 
+            - helps to implement greater modularity in applications 
+
+        - what is container 
+            - creates objects (instantiation), initialize values to them (initialization), 
+                wire them together (dependency injection), etc. 
+            - it manages the entire life cycle of objects 
+
+
+            - BeanFactory (i)
+                -* deprecated from spring 3.x 
+                
+            - ApplicationContext (i)
+
+
+
+        - Bean Configuration / bean defination 
+
+                - using xml 
+
+                - using anotations 
+
+                - using java configuration 
+
+        - what is the bean life cycle, how to configure the beans 
+
+                start container ---> container instantiate beans -----> dependencies injected 
+                                                                            |
+                                                                            |
+                                                                          init() 
+                                                                            |
+                                                                            |
+                                                                          destroy()
+
+                ** implement the bean life cycle 
+        
+        
+         
+        
+        - how does container create objects 
+        
+        - dependency injections 
+                - constructor DI 
+                - Setter DI 
+                - interface DI 
+        
+        - autowiring 
+        
+        - exception handling 
+        
+        - spring expression language 
+
+
