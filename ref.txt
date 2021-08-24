@@ -162,10 +162,62 @@ Spring
         - JPA 
             - it is specification for ORM, every ORM tool must implement these specifications 
             - standaridization 
+            - JPA is an abstraction over jdbc that makes it possible to be indepedent of database 
+            - it brings easy mechanism to map the objects to relational databases 
+            - it has an 'EntityManager' api to perform db related operations 
+            - JPA also come up with JPQL 
 
-        - Hibernate / Hibernate JPA 
-            - jpa provider 
-            - it is a jpa implementation
+        - JPA Implementations 
+                - jpa provider 
+                - it is a jpa implementation
+            - Hibernate 
+            - EclipsLink 
+            - MyBatis 
+            - OpenJPA
+
+        - EntityManager
+            - it is an interface for persisting objects into the db 
+            - manages the state and lifecycle of entities, and uses the JPQL queries to retrieve the entities from the db 
+
+
+        - JPA Entity 
+            - Entities are the objects which are managed by the EntityManager
+                - the objects that are mapped with relational tables, persisted in to the db, can be queried from the db 
+            - entities are objects which live shortly in memory and persistently in db 
+            -* an Entity class can be either concrete class or abstract class 
+            -* entities also supports inheritance, relationships 
+            - Entity class mush have...     
+                    @Entity annotation 
+                    define an identifier field (using @Id annotation)
+                    must have a no-arg constructor 
+
+            @Entity
+            public class Book {
+
+                @Id 
+                private int id;
+
+                public Book(){}
+
+            }
+
+        - Persistence unit 
+            - a named configuration for a set of "entities" you want to persist 
+
+
+        - Entity State
+
+        - Default Mapping 
+
+        - Custom Mapping 
+
+        - Entity Relationships 
+
+        - Entity Inheritance 
+
+
+
+
 
         - Spring Data JPA
             - it is an integration layer to integrate all types of ORM implementations like Hibernate, eclipselink, mybatis etc. 

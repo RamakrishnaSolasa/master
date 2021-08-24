@@ -30,7 +30,7 @@ public class JdbcAccountRepositoryImpl implements AccountRepository {
 		String query="select * from account a where a.accountNumber=? ";
 		Connection connection=dataSource.getConnection();
 		PreparedStatement preparedStatement=connection.prepareStatement(query);
-		preparedStatement.setLong(1, accountNUmber);
+		preparedStatement.setLong(1, accountNUmber) ;
 		ResultSet rs=preparedStatement.executeQuery();
 		Account account=null;
 		if(rs.next()){
