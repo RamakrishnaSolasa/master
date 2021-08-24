@@ -42,6 +42,7 @@ Spring
 
     spring modules 
         - spring Core 
+        - Spring AOP
         - spring REST 
         - spring boot
         - spring Data 
@@ -74,7 +75,7 @@ Spring
 
             - BeanFactory (i)
                 -* deprecated from spring 3.x 
-                
+
             - ApplicationContext (i)
 
 
@@ -116,3 +117,55 @@ Spring
         - spring expression language 
 
 
+        - spring Core 
+            - bean definition, bean lifecycle, ioc containers, beanfactory, ApplicationContext
+            - dependency injection 
+            - autowiring 
+            - spring expression language 
+            - I18N 
+            - exception handling 
+            - event notification model 
+
+
+    
+
+
+
+
+        - Spring AOP
+            - we can separate all service logic from business logic 
+
+        - Spring Data 
+                - to interact with the database 
+                - Spring Data JPA 
+                - Spring Data MongoDB 
+                - Spring Data REST 
+
+        - Spring REST 
+
+        - spring boot
+
+        - Spring Security 
+
+        - Spring Cloud 
+
+
+
+        ORM tools       jpa implementations 
+        Hibernate ----> hibernate jpa 
+
+        iBatis ----->   mybatis 
+
+        TopLink -------> Eclipselink 
+
+
+        - JPA 
+            - it is specification for ORM, every ORM tool must implement these specifications 
+            - standaridization 
+
+        - Hibernate / Hibernate JPA 
+            - jpa provider 
+            - it is a jpa implementation
+
+        - Spring Data JPA
+            - it is an integration layer to integrate all types of ORM implementations like Hibernate, eclipselink, mybatis etc. 
