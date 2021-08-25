@@ -11,13 +11,21 @@ import java.util.List;
 
 import javax.sql.DataSource;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
+
 import com.way2learnonline.model.*;
 
 
-
+//@Component
+@Repository
 public class JdbcTransactionRepositoryImpl implements TransactionRepository {
 	
+	@Autowired
 	private DataSource dataSource;	
+	
+	public JdbcTransactionRepositoryImpl() {}
 
 	public JdbcTransactionRepositoryImpl(DataSource dataSource) {
 		super();

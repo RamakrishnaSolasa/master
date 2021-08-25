@@ -221,3 +221,24 @@ Spring
 
         - Spring Data JPA
             - it is an integration layer to integrate all types of ORM implementations like Hibernate, eclipselink, mybatis etc. 
+
+
+        interface  JpaRepository<T, ID>
+            |
+            |
+            |
+        interface CrudRepository<T, ID> 
+            |
+            |--> <S extends T> save(S entity)
+            |
+            |--> Optional<T> findById(ID id)
+            |
+            |--> void delete(T entity)
+            |
+            |--> Iterable<T> findAll()
+            |
+            |-> <S extends T> saveAll(Iterable<S> entities)
+
+
+Proxy Instance 
+------------------
