@@ -35,16 +35,16 @@ public class EmployeeService {
 		return null;
 	}
 	
-	public Employee updateEmployee(Employee emp, int id) {
-		Employee employee = getEmployee(id);
-		if(employee!=null) {
-			 employee.setCity(emp.getCity());
-			 employee.setEname(emp.getEname());
-			 employee.setSalary(emp.getSalary());
-			 return employee;
-		}
-		
-		return null;
-	}
+//	public Employee updateEmployee(Employee emp, int id) {
+//		Employee employee = getEmployee(id);
+//		if(employee!=null) {
+//			 employee.setCity(emp.getCity());
+//			 employee.setEname(emp.getEname());
+//			 employee.setSalary(emp.getSalary());
+//			 return employee;
+//		}
+//		
+//		return null;
+//	}
 	
 }

@@ -242,9 +242,31 @@ Spring
 
 Transactions 
 
-relationships 
+            TransactionManager (I) 
+                |
+                |
+                |-> DataSourceTrasactionManager
+                |-> HibernateTrasactionManager
+                |-> JPAtransationManager
+Inheritance
 
-Inheritance 
+    - SINGLE_TABLE
+    - TABLE_PER_CLASS
+    - JOINED
+
+relationships 
+    - in OOP, we have associations between classes 
+    - these associations have a direction and cardinality 
+
+        Department 1 ------------------->1 * Employee 
+                                                id  name city salary deptId
+
+        @OneToOne           ---> join column
+        @ManyToOne           ---> join column
+
+        @OneToMany          --> join table 
+        @ManyToMany         --> join table 
+         
 
 Query entities & QueryDSL
 
