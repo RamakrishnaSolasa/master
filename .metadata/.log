@@ -4521,3 +4521,6 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 10; columnNumber: 43; The 
 	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
 	at org.eclipse.equinox.internal.p2.discovery.compatibility.DirectoryParser.parse(DirectoryParser.java:54)
 	... 6 more
+
+!ENTRY org.eclipse.jdt.ui 2 0 2021-08-25 16:34:43.712
+!MESSAGE The 'com.github.camel-tooling.eclipse.client.id1' proposal computer from the 'com.github.camel-tooling.eclipse.client' plug-in did not complete normally. The extension took too long to return from the 'computeCompletionProposals()' operation.
