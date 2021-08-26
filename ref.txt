@@ -240,5 +240,12 @@ Spring
             |-> <S extends T> saveAll(Iterable<S> entities)
 
 
-Proxy Instance 
-------------------
+Transactions 
+
+relationships 
+
+Inheritance 
+
+Query entities & QueryDSL
+
+Reflection API & Proxy objects 

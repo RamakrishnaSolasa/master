@@ -20,8 +20,6 @@ public class JdbcAccountRepositoryImpl implements AccountRepository {
 	public Account findAccountByNumber(Long accountNUmber)  {
 		String query="select a.accountNumber,a.name,a.isActive,a.city as city ,a.country as country,a.balance ,a.emailaddress from account a where a.accountNumber=? ";		
 		Account account=jdbcTemplate.queryForObject(query,new Object[]{accountNUmber}, new BeanPropertyRowMapper<Account>(Account.class));
-		
-
 		return account;
 	}
 
