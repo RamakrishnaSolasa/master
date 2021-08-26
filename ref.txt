@@ -271,3 +271,33 @@ relationships
 Query entities & QueryDSL
 
 Reflection API & Proxy objects 
+
+
+MoviesService (REST Application)
+-----------------------------
+
+        GET     http://localhost:8081/api/movies 
+                    - return all the movies in json form 
+
+        GET     http://localhost:8081/api/movies/<<_id>>
+                    - return a movie with the given id 
+
+        POST    http://localhost:8081/api/movies
+                    {
+                        title : 'xxxxxxx',
+                        numberInStock : 3,
+                        dailyRentalRate : 2
+                    }
+
+        PUT     http://localhost:8081/api/movies/<<_id>>
+                    {
+                        title : 'xxxxxxx',
+                        numberInStock : 3,
+                        dailyRentalRate : 2
+                    }
+        
+        DELETE   http://localhost:8081/api/movies/<<_id>>
+
+
+
+        title : string, alleast 5 characters 

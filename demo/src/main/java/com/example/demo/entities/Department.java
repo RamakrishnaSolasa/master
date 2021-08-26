@@ -19,8 +19,11 @@ public class Department {
 	private String deptName;
 	
 	
-	@OneToMany
+	@OneToMany					
 	private List<Employee> employees;
+	
+	//department_employees
+	//employee_id 	department_dept_id
 	
 	
 	public Department() {
